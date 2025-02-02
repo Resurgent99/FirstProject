@@ -2,7 +2,7 @@ package DateQuest;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
+//Создал утильный класс с датами
 public class DateQuestRealise {
     public static final String firstDateFormat = "yyyy-MM-dd";
     public static final String secondDateFormat = "dd.MM.yyyy";

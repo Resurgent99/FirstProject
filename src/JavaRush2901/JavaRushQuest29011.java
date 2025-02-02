@@ -3,7 +3,7 @@ package JavaRush2901;
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.Stack;
-
+//Сделал вывод элементов рекурсией и стэком!!
 public class JavaRushQuest29011 {
     Scanner scanner = new Scanner(System.in);
     String[] text = new String[10];
