@@ -24,7 +24,5 @@ public class JavaRushMain0202 {
         array.setArray02025();
         array.updateArray();
         array.showArray02025();
-
-
     }
 }
