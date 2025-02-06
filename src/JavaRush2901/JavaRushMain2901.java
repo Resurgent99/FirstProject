@@ -7,11 +7,14 @@ public class JavaRushMain2901 {
         array.sortBigMassive();
         array.showMassive29014();*/
 
-        JavaRushQuest29011 array = new JavaRushQuest29011();
+        /*JavaRushQuest29011 array = new JavaRushQuest29011();
         array.massive();
         array.massiveRecurcive();
         array.massiveInicialiseStack();
-        array.showMassive();
+        array.showMassive();*?
+         */
 
+        int i = JavaRushQuest29011.testRecurcive(15);
+        System.out.println(i);
     }
 }
