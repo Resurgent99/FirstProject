@@ -28,7 +28,7 @@ public class JRQ05028 {
             if (pair.getValue().equals(searchName)){
                 firstName++;
             }
-            if (pair.getValue().equals(searchSecondName)){
+            if (pair.getKey().equals(searchSecondName)){
                 secondName++;
             }
         }

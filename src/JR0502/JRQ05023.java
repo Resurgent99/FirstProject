@@ -24,7 +24,6 @@ public class JRQ05023 {
     public void showMap23(){
         for (Map.Entry<String, String> pair : map.entrySet()){
             String key = pair.getKey();
-            String value = pair.getValue();
             System.out.println("Ключ : " + key);
         }
     }

@@ -24,32 +24,54 @@ public class JRQ05025 {
     List<Integer> arraylist = new ArrayList<>();
     List<Integer> linckedlist = new LinkedList<>();
 
-    public void listCreate(){
+    public void arrayListCreate(){
         int n = 0;
         for (int i = 0; i < 10000; i++){
             n++;
             arraylist.add(n);
+        }
+    }
+
+    public void linckedListCreate(){
+        int n = 0;
+        for (int i = 0; i < 10000; i++){
+            n++;
             linckedlist.add(n);
         }
     }
 
-    public void listRemove(){
+    public void arrayListRemove(){
         for (int i = 0; i < 10000; i++){
             arraylist.remove(0);
+        }
+    }
+
+    public void linckedListRemove(){
+        for (int i = 0; i < 10000; i++){
             linckedlist.remove(0);
         }
     }
 
-    public void getList(){
+    public void getArrayList(){
         for (int i = 0; i < 10000; i++){
             arraylist.get(i);
+        }
+    }
+
+    public void getLinckedList(){
+        for (int i = 0; i < 10000; i++){
             linckedlist.get(i);
         }
     }
 
-    public void setList(){
+    public void setArraylist(){
         for (int i = 0; i < 10000; i++){
             arraylist.set(i, i*2);
+        }
+    }
+
+    public void setLinckedlist(){
+        for (int i = 0; i < 10000; i++){
             linckedlist.set(i, i*2);
         }
     }
@@ -62,11 +84,7 @@ public class JRQ05025 {
     public void getTimeMsOfInsertArray(){
         double startTime = System.currentTimeMillis();
 
-        int n = 0;
-        for (int i = 0; i < 10000; i++){
-            n++;
-            arraylist.add(n);
-        }
+        arrayListCreate();
 
         double endTime = System.currentTimeMillis();
         System.out.println(endTime - startTime);
@@ -75,11 +93,7 @@ public class JRQ05025 {
     public void getTimeMsOfInsertLincked(){
         double startTime = System.currentTimeMillis();
 
-        int n = 0;
-        for (int i = 0; i < 10000; i++){
-            n++;
-            linckedlist.add(n);
-        }
+        linckedListCreate();
 
         double endTime = System.currentTimeMillis();
         System.out.println(endTime - startTime);
@@ -89,9 +103,7 @@ public class JRQ05025 {
         double startTime = System.currentTimeMillis();
 
 
-        for (int i = 0; i < 10000; i++){
-            arraylist.get(i);
-        }
+        getArrayList();
 
         double endTime = System.currentTimeMillis();
         System.out.println(endTime - startTime);
@@ -99,9 +111,7 @@ public class JRQ05025 {
     public void getTimeMsOfGetLincked(){
         double startTime = System.currentTimeMillis();
 
-        for (int i = 0; i < 10000; i++){
-            linckedlist.get(i);
-        }
+        getLinckedList();
 
         double endTime = System.currentTimeMillis();
         System.out.println(endTime - startTime);
@@ -109,9 +119,7 @@ public class JRQ05025 {
     public void getTimeMsOfSetArray(){
         double startTime = System.currentTimeMillis();
 
-        for (int i = 0; i < 10000; i++){
-            arraylist.set(i, i*2);
-        }
+        setArraylist();
 
         double endTime = System.currentTimeMillis();
         System.out.println(endTime - startTime);
@@ -119,9 +127,7 @@ public class JRQ05025 {
     public void getTimeMsOfSetLincked(){
         double startTime = System.currentTimeMillis();
 
-        for (int i = 0; i < 10000; i++){
-            linckedlist.set(i, i*2);
-        }
+        setLinckedlist();
 
         double endTime = System.currentTimeMillis();
         System.out.println(endTime - startTime);
@@ -130,9 +136,7 @@ public class JRQ05025 {
     public void getTimeMsOfRemoveArray(){
         double startTime = System.currentTimeMillis();
 
-        for (int i = 0; i < 10000; i++){
-            arraylist.remove(0);
-        }
+        arrayListRemove();
 
         double endTime = System.currentTimeMillis();
         System.out.println(endTime - startTime);
@@ -140,9 +144,7 @@ public class JRQ05025 {
     public void getTimeMsOfRemoveLincked(){
         double startTime = System.currentTimeMillis();
 
-        for (int i = 0; i < 10000; i++){
-            linckedlist.remove(0);
-        }
+        linckedListRemove();
 
         double endTime = System.currentTimeMillis();
         System.out.println(endTime - startTime);

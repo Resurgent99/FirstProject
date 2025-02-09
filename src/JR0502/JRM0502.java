@@ -1,5 +1,7 @@
 package JR0502;
 
+import java.util.Collection;
+
 public class JRM0502 {
     public static void main(String[] args) {
             /*JRQ05021 set = new JRQ05021();
@@ -47,6 +49,7 @@ public class JRM0502 {
             map.mapCreate();
             map.mapRemove();
             map.showMap29();*/
+
 
     }
 }
