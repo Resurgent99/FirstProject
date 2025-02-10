@@ -1,5 +1,8 @@
 package JavaRush0902;
 
+import java.io.FileNotFoundException;
+import java.net.URISyntaxException;
+
 public class JRM0902 {
     public static void main(String[] args) {
             /*JRQReturnStackTrace stackTrace = new JRQReturnStackTrace();
@@ -25,8 +28,20 @@ public class JRM0902 {
             listExeption.catchExeption();
             listExeption.method1();*/
 
-            JRQMapExeption mapExeption = new JRQMapExeption();
+            /*JRQMapExeption mapExeption = new JRQMapExeption();
             mapExeption.catchExeption();
-            mapExeption.method1();
+            mapExeption.method1();*/
+
+            /*JRQManyExeption manyExeption = new JRQManyExeption();
+            manyExeption.catchExeption();
+        try {
+            manyExeption.method1();
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (URISyntaxException e) {
+            throw new RuntimeException(e);
+        }
+
+    }*/
     }
 }
