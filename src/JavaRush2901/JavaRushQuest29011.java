@@ -31,6 +31,15 @@ public class JavaRushQuest29011 {
         }
     }
 
+    public static int testRecurcive (int i){
+        i--;
+        if (i > 10) {
+            return testRecurcive(10);
+
+        }
+        return i;
+    }
+
 
      public void massiveInicialiseStack(){
         for(int i = 0; i < text.length; i++) {
