@@ -9,25 +9,22 @@ import java.util.List;
 //map.put(null, null);
 //map.remove(null);
 public class JRQMapExeption {
-    public void catchExeption(){
-        System.out.println("Program starts");
-        try
-        {
-            System.out.println("Before method1 calling");
-            method1();
-            System.out.println("After method1 calling. Never will be shown ");
-        }
-        catch (NullPointerException e)
-        {
-            System.out.println("NullPointerException.Exception has been caught");
-        }
-        System.out.println("Program is still running");
-    }
 
-    public void method1()
-    {
-        HashMap<String, String> map = new HashMap<String, String>(null);
-        map.put(null, null);
-        map.remove(null);
+  public void catchExeption() {
+    System.out.println("Program starts");
+    try {
+      System.out.println("Before method1 calling");
+      method1();
+      System.out.println("After method1 calling. Never will be shown ");
+    } catch (NullPointerException e) {
+      System.out.println("NullPointerException.Exception has been caught");
     }
+    System.out.println("Program is still running");
+  }
+
+  public void method1() {
+    HashMap<String, String> map = new HashMap<String, String>(null);
+    map.put(null, null);
+    map.remove(null);
+  }
 }
