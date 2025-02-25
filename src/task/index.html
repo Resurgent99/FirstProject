@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task Manager</title>
+</head>
+<body>
+<h1>Task Manager</h1>
+
+<form action="TaskServlet" method="post">
+  <input type="text" name="taskText" placeholder="Create task">
+  <input type="submit" value="Add task">
+</form>
+
+<h2>Current Tasks</h2>
+<ul>
+  <%
+  ArrayList<String> tasks = (ArrayList<String>) request.getAttribute("tasks");
+  if (tasks != null) {
+  for (String task : tasks) {
+  %>
+  <li><%= task %></li>
+  <%
+  }
+  } else {
+  %>
+  <li>No tasks</li>
+  <% } %>
+  </ul>
+</body>
+</html>
