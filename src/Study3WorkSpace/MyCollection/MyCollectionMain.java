@@ -11,7 +11,7 @@ public class MyCollectionMain {
   public static void main(String[] args) {
     CarCollection carCollection = new CarCollection();
     carCollection.createCollection();
-   // carCollection.myOwnCollecxtionIterator();
+    carCollection.myOwnCollecxtionIterator();
     carCollection.arrayIterator();
     carCollection.queueIterator();
 

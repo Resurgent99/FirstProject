@@ -7,16 +7,16 @@ public class QuestWorkspace {
   public String catchMethod() throws Exception, TooShortStringException {
     try {
       System.out.println("Before start ");
-      getPartOfString("JavaRush - лучший сервис обучения Java.");
+      getPartOfString(" ");
       System.out.println("After end");
     } catch (Exception e) {
       throw e;
     }
-    return getPartOfString("JavaRush - лучший сервис обучения Java.");
+    return getPartOfString(" ");
   }
 
  public String getPartOfString(String string) {
-   int startIndex = string.indexOf(" ", string.indexOf(" ") + 0 );
+   int startIndex = string.indexOf(" ", string.indexOf(" ") );
    int endIndex = string.indexOf(" ",
        string.indexOf(" ", string.indexOf(" ", string.indexOf(" ", string.indexOf(" ")+1) +1) +1) +1) +1;
    if (endIndex == -1) {

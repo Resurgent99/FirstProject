@@ -3,7 +3,7 @@ package immutable;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MyImmutableClass {
+public final class MyImmutableClass {
     private final String field;
     private final Map<String, String> fieldMap;
 
