@@ -1,7 +1,11 @@
 package JavaRush0902.DopBlock;
 
+import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.text.ParseException;
+import java.util.HashMap;
 
 public class DopMain {
 
@@ -26,15 +30,17 @@ public class DopMain {
       throw new RuntimeException(e);
     }*/
 
-    /*ConverterDate converterDate = new ConverterDate();
+    ConverterDate converterDate = new ConverterDate();
     try {
       converterDate.converter();
     } catch (ParseException e) {
       throw new RuntimeException(e);
-    }*/
+    }
 
-    VowelsAndConsonants vowelsAndConsonants = new VowelsAndConsonants();
+    /*VowelsAndConsonants vowelsAndConsonants = new VowelsAndConsonants();
     vowelsAndConsonants.checkVowelsOrConsonants();
-    vowelsAndConsonants.showString();
+    vowelsAndConsonants.showString();*/
+
+
   }
 }
