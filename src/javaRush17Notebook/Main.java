@@ -7,12 +7,20 @@ package javaRush17Notebook;
 //"Thread-0-Note4"
 //2.2. используя метод removeNote удалит заметку
 //2.3. в качестве первого параметра в removeNote передай имя нити - метод getName()
+//1. Класс Note будет использоваться нитями. Поэтому сделай так, чтобы обращения к листу notes блокировали мютекс notes, не this
+//2. Все System.out.println не должны быть заблокированы (синхронизированы), т.е. не должны находиться в блоке synchronized
+//Класс Note будет использоваться нитями.
+//Поэтому сделай так, чтобы лист notes находился в общей памяти
 public class Main {
 
   public static void main(String[] args) {
     Note note = new Note();
-    Notebook noteThread = new Notebook(note);
-    noteThread.start();
+
+    Notebook noteThread1 = new Notebook(note);
+    Notebook noteThread2 = new Notebook(note);
+
+    noteThread1.start();
+    noteThread2.start();
   }
 
 }
