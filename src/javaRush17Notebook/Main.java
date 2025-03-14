@@ -1,4 +1,3 @@
-
 package javaRush17Notebook;
 
 //1. Класс Note будет использоваться нитями.
@@ -11,8 +10,6 @@ public class Main {
 
   public static void main(String[] args) {
     Note note = new Note();
-    Notebook noteThread = new Notebook(note);
-    noteThread.start();
   }
 
 }
