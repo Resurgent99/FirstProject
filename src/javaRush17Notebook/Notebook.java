@@ -1,4 +1,3 @@
-
 package javaRush17Notebook;
 
 public class Notebook extends Thread {
