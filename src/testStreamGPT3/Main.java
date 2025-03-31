@@ -8,13 +8,13 @@ import java.util.stream.Collectors;
 public class Main {
   public static void main(String[] args) {
     List<Users> list = Arrays.asList(
-        new Users("Alex","Man"),
-        new Users("Yana", "Woman"),
-        new Users("Bob", "Man"),
-        new Users("Kate", "Woman")
+        new Users("Alex", Sex.MAN),
+        new Users("Yana", Sex.WOMAN),
+        new Users("Bob", Sex.MAN),
+        new Users("Kate", Sex.WOMAN)
     );
 
-    Map<String, Long> countSex = list.stream()
+    Map<Sex, Long> countSex = list.stream()
         .collect(Collectors.groupingBy(Users::getSex, Collectors.counting()));
 
     System.out.println(countSex);

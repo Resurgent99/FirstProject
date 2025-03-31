@@ -1,5 +1,8 @@
 package testStream;
 
+import lombok.Data;
+
+@Data
 public class Student {
   private String name;
   private int grade;
@@ -9,13 +12,6 @@ public class Student {
     this.grade = grade;
   }
 
-  public String getName() {
-    return name;
-  }
-
-  public int getGrade() {
-    return grade;
-  }
 
   @Override
   public String toString() {
