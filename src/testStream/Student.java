@@ -1,21 +1,19 @@
 package testStream;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
+@AllArgsConstructor
 public class Student {
+
   private String name;
   private int grade;
-
-  public Student(String name, int grade) {
-    this.name = name;
-    this.grade = grade;
-  }
 
 
   @Override
   public String toString() {
-    return name + "("+ + grade +")";
+    return name + "(" + +grade + ")";
   }
 
 }

@@ -9,16 +9,16 @@ public class Main {
 
   public static void main(String[] args) {
     List<Student> students = Arrays.asList(
-     new Student("Sasha", 89),
-    new Student("Nikita", 80),
-     new Student("Stas", 30)
+        new Student("Sasha", 89),
+        new Student("Nikita", 80),
+        new Student("Stas", 30)
     );
-
 
     List<String> filtredName = students.stream()
         .filter(student -> student.getGrade() > 75)
-        .sorted(Comparator.comparing(Student::getName))
         .map(Student::getName)
+        .sorted()
+
         .collect(Collectors.toList());
     System.out.println(filtredName);
   }
